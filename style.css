@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+  background-color: #eaeaea;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: auto 20px;
+  background-color: #06283d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+nav div {
+  padding: 15px 20px 15px 20px;
+}
+nav div a {
+  font-weight: bold;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 15px 20px;
+}
+nav ul li:hover {
+  background-color: #cb6034;
+  opacity: 0.8;
+  transform: scale(1.1) rotate(1deg);
+}
+nav ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+}
+.jumbotron {
+  width: 100%;
+  height: 600px;
+  margin-top: 48px;
+  background: url("./img/jumbotron/kota_makasar.png");
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron div {
+  margin: auto 50px;
+  background-color: rgba(6, 40, 61, 0.5);
+}
+
+.jumbotron p {
+  padding-top: 20px;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+}
+
+#content {
+  padding: 0 35px 0 35px;
+  flex: 3;
+}
+article {
+  padding-top: 50px;
+}
+
+article .container {
+  border: 1px solid black;
+  text-align: justify;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+article p {
+  text-indent: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+#wisata img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+aside {
+  width: 100%;
+  margin-top: 40px;
+  flex: 1;
+}
+aside .biodata {
+  margin-top: 10px;
+  padding-top: 10px;
+  border: 1px solid black;
+  background-color: #06283d;
+  color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+aside table {
+  margin-left: 10px;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  background-color: #06283d;
+  color: #eaeaea;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li:hover {
+    transform: scale(1) rotate(0);
+  }
+  article {
+    padding-top: 100px;
+  }
+}
